@@ -35,5 +35,8 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer{
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry){
         registry.addEndpoint("/ws").withSockJS();
+        // enables SockJS fallback options. 
+        // SockJS is a library that provides WebSocket-like communication for browsers 
+        // that don't support WebSocket.
     }
 }

@@ -35,8 +35,8 @@ public class UserController {
     }
 
     @GetMapping("/phoneNumber/{phoneNumber}")
-    public UserModel getUserByNumber(@PathVariable String number){
-        return userService.getUserByNumber(number);
+    public UserModel getUserByNumber(@PathVariable String phoneNumber){
+        return userService.getUserByNumber(phoneNumber);
     }
 
     @GetMapping("/status/{status}")

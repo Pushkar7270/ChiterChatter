@@ -3,6 +3,7 @@ package com.chitterChatter.User;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
+
 import lombok.RequiredArgsConstructor;
 
 
@@ -34,6 +35,5 @@ public class UserService {
     public List<UserModel> getUserByStatus(Status status){
         return userRepository.findByStatus(status);
     }
-
 
 }
